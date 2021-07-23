@@ -1,12 +1,12 @@
-import {Card} from 'react-bootstrap';
+import {Card,Button} from 'react-bootstrap';
 import ReactStars from "react-rating-stars-component";
 
 
 function MoCard({film}) {
     return (
         <div>
-<Card style={{ width: '300px', height:'700px'}}>
-  <Card.Img variant="top" src={film.url} />
+<Card style={{ width: '300px', height:'450px'}}>
+  <Card.Img   style={{ height:'380px'}} variant="top" src={film.url}   />
   <Card.Body>
     <Card.Title>{film.titre}</Card.Title>
     <Card.Text>
@@ -19,6 +19,9 @@ function MoCard({film}) {
     value={film.rate}
     activeColor="#ffd700"
   />
+
+<Button variant="dark">Trailer</Button>{' '}
+
 
 </Card>
             

@@ -54,8 +54,11 @@ Add film        </Button>
 </form>
           </Modal.Body>
           <Modal.Footer>
-            <Button variant="primary" onClick={()=>addmovie(newMovie)}>
+            <Button variant="primary" onClick={()=>addmovie(newMovie) } >
               Save Changes
+            </Button>
+            <Button variant="primary" onClick={handleClose} >
+              close
             </Button>
           </Modal.Footer>
         </Modal>
